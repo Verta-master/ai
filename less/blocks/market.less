@@ -1,0 +1,156 @@
+.market {
+  margin-bottom: 89px;
+  
+  h2 {
+    text-align: left;
+  }
+}
+.market__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+blockquote {
+  .reset();
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  
+  b {
+    font-weight: 700;
+    color: #8952FF;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #FF3BED 0%, #8952FF 100%);
+    border-radius: 2px;
+  }
+}
+.market__img {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.market__info {
+  font-size: 14px;
+  line-height: 26px;
+  
+  p {
+    margin-bottom: 30px;
+  }
+}
+//------------------------------------------
+@media(min-width: 640px) {
+  .market {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .market__img {
+    margin-top: -33px;
+  }
+}
+//------------------------------------------
+@media(min-width: 960px) {
+  .market__info {
+    width: 500px;
+  }
+  .market {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 106px;
+  }
+  .market__img {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    
+    img {
+      display: block;
+    }
+  }
+}
+//------------------------------------------
+@media(min-width: 1024px) {
+  .market h2 {
+    margin-bottom: 40px;
+  }
+  .market__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  blockquote {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  blockquote,
+  .market__info {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .market {
+    padding-bottom: 148px;
+  }
+}
+//------------------------------------------
+@media(min-width: 1280px) {
+  .market__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    img {
+//      height: 640px;
+//      width: auto;
+      width: 100%;
+      height: auto;
+      flex: 0 0 auto;
+//      max-width: none;
+    }
+  }
+  .market {
+    padding-bottom: 136px;
+  }
+}
+//------------------------------------------
+@media(min-width: 1440px) {
+  .market {
+    padding-bottom: 130px;
+  }
+}
+//------------------------------------------
+@media(min-width:1920px) {
+  .market__subtitle {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  blockquote,
+  .market__info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .market__info {
+    width: 600px;
+  }
+}
